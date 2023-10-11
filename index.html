@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple music player</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+</head>
+
+<body>
+    <div class="player">
+
+        <section class="img">
+            <img id="bgimg" src="" alt="">
+        </section>
+
+        <section class="info">
+            <div class="progress">
+                <div id="start">0:00</div>
+                <div id="bar"></div>
+                <div id="end"></div>
+            </div>
+
+            <div class="song_detail">
+                <span id="title"></span>
+                <span id="author"></span>
+            </div>
+
+            <div id="controls">
+                <span><i id="voice" class="iconfont icon-shengyin_shiti"></i></span>
+                <div class="play">
+                    <span><i id="pre" class="iconfont icon-shangyishou"></i></span>
+                    <span><i id="play" class="iconfont icon-24gf-play"></i></span>
+                    <span><i id="next" class="iconfont icon-xiayishou"></i></span>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- audio -->
+        <section class="audio">
+            <audio id="audio" controls src=""></audio>
+        </section>
+
+
+    </div>
+    
+</body>
+
+<script src="./script.js"></script>
+</html>
